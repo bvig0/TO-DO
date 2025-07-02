@@ -158,13 +158,3 @@ ul .item {
         width: 100%;
     }
 }
-
-@media (min-width: 1024px){
-    body {
-        margin: 0;
-    }
-
-    .container div {
-        width: 100%;
-    }
-}
