@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 250px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0;
+    font-size: 2.5rem;
+}
+
+/* Criando um container para todo o conteúdo */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding: 20px;
+    border: 1px solid #c4c4c4;
+    border-radius: 4px;
+}
+
+.container div {
+    padding: 20px;
+}
+
+.container .aligning {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.container label {
+    border: 1px solid #c4c4c4;
+    border-radius: 4px 0 0 4px;
+    padding: 6px;
+}
+
+.container input {
+    border: 1px solid #c4c4c4;
+    border-radius: 0 4px 4px 0;
+    padding: 7.2px;
+    width: 100vh;
+}
+
+/* botões */
+#enviar {
+    color: #fff;
+    background-color: #0048ff;
+    padding: 6.5px;
+    border-radius: 4px;
+    border: none;
+    transition: 1s ease, transform 0.4s ease;
+}
+
+#enviar:hover {
+    transform: scale(1.1);
+}
+
+#limpar {
+    color: #fff;
+    background-color: red;
+    padding: 6.5px;
+    border-radius: 4px;
+    border: none;
+    transition: 1s ease, transform 0.4s ease;
+}
+
+#limpar:hover {
+    transform: scale(1.1);
+}
+
+.container .buttons button {
+    color: #fff;
+    background-color: #0048ff;
+    padding: 6.5px;
+    border-radius: 4px;
+    border: none;
+}
+
+.container .buttons button span {
+    color: #fff;
+    background-color: #707070;
+    padding: 3px;
+    border-radius: 4px;
+    border: none;
+}
+
+/* ul das tarefas */
+ul {
+    margin: 20px;
+}
+
+ul .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #c4c4c4;
+    border-radius: 4px;
+}
+
+.item button {
+    padding-right: 5px;
+    border: none;
+    font-size: 1.4rem;
+    background-color: #ffffff00;
+    color: #404040;
+    transition: 1s ease, transform 0.4s ease;
+}
+
+.item button:hover {
+    transform: scale(1.1);
+    color: #000000;
+}
+
+/* classe riscar */
+.riscar {
+    color: red;
+    background-color: #dee2e6;
+}
+
+.riscar span {
+    text-decoration: line-through;
+    /* risca só o span */
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+/* Média Query para mobile */
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+    }
+
+    .container div {
+        width: 100%;
+    }
+
+}
+
+/* Média query para tables ou celulares maiores/deitados */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        margin: 0;
+    }
+
+    .container div {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px){
+    body {
+        margin: 0;
+    }
+
+    .container div {
+        width: 100%;
+    }
+}

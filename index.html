@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./to-do.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>TO-DO</title>
+</head>
+
+<body>
+    <h1>TO-DO</h1>
+    <div class="container">
+        <div>
+            <section class="aligning">
+                <label for="tarefa">Tarefa</label>
+                <input type="text" name="tarefa" placeholder="Digite a sua tarefa">
+            </section>
+            
+            <!-- Os 3 botões, sendo o 'tarefas' o unico que não tem um evento de click -->
+            <section class="buttons">
+                <button id="enviar">Enviar</button>
+                <button id="limpar" onclick="limparTudo()">Limpar</button>
+                <button>Tarefas: <span id="contador">0</span></button>
+            </section>
+
+            <ul>
+                <li class="item">Tarefa (Este não conta no contador de tarefas)<button class="fa-solid fa-xmark"></button></li> 
+            </ul>
+        </div>
+    </div>
+    <script src="./to-do.js"></script>
+</body>
+
+</html>
